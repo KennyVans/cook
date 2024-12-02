@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- в экшн пишем адрес сервера, куда пойдет данные -->
+   <!-- гет более шифрованй, ПОСТ более открытые данные -->
+    <!-- если на странице несколько форм тел, емейл, тд, то несколько имен даем, если только телефон (одна форма) то ничего не пишем НЕ ПИШЕМ имя -->
+<form action="" method="post" name="register">
+  <div>
+  <label for="first_name" style="display: block;">First Name</label>
+  <input id="first_name" placeholder="First Name" style="width: 300px; height: 40px;">
+  <!-- типа определяет что будет в форме текст, емейл пароль, тел, цифры и тд -->
+</div>
+
+   <div>
+  <label for="Last_name" style="display: block;" >Last Name</label>
+  <input type="" name="" placeholder="First Name" style="width: 300px; height: 40px;">
+</div>
+
+<div>
+    <label>
+        <input type="checkbox" name="agree" checked>
+        I agree about ...
+    </label>
+</div>
+<div>
+    <label>
+        <input type="radio" name="gender" value="men">
+        Men
+    </label>
+</div>
+<div>
+    <label>
+        <input type="radio" name="gender" value="Women">
+        Women
+    </label>
+</div>
+<div>
+    <label>
+        <input type="radio" name="gender" value="other">
+        other
+    </label>
+</div>
+<div>
+    <input type="file" name="load">
+</div>
+<button type="submit">Send</button>
+</form>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
